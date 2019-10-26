@@ -8,7 +8,7 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 	ESX.PlayerData = xPlayer
 
 	if Config.EnableHud then
-		for k,v in ipairs(xPlayer.accounts) do
+	--[[	for k,v in ipairs(xPlayer.accounts) do
 			local accountTpl = '<div><img src="img/accounts/' .. v.name .. '.png"/>&nbsp;{{money}}</div>'
 
 			ESX.UI.HUD.RegisterElement('account_' .. v.name, k - 1, 0, accountTpl, {
@@ -18,7 +18,7 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 			ESX.UI.HUD.UpdateElement('account_' .. v.name, {
 				money = ESX.Math.GroupDigits(v.money)
 			})
-		end
+		end --]]
 
 		local jobTpl = '<div>{{job_label}} - {{grade_label}}</div>'
 
