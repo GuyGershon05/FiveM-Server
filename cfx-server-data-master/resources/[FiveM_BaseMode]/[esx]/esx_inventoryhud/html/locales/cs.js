@@ -1,9 +1,9 @@
 var locale = new Object();
-locale.dropItem = "<span class=\"emoji\">🗑️</span> Zahodit";
-locale.useItem = "<span class=\"emoji\">🖐️</span> Použít";
-locale.giveItem = "<span class=\"emoji\">🎁</span> Dát";
-locale.getNumber = "Zadejte počet";
-locale.getPlayer = "Zvolte hráče";
-locale.confirmNumber = "Odeslat";
-locale.closeInventory = "Zavřít";
-locale.searchInventory = "Hledat v inventáři";
+locale.dropItem = "<span class=\"emoji\">🗑️</span> זרוק";
+locale.useItem = "<span class=\"emoji\">🖐️</span> השתמש";
+locale.giveItem = "<span class=\"emoji\">🎁</span> תן";
+locale.getNumber = "הזן כמות";
+locale.getPlayer = "בחר שחקן";
+locale.confirmNumber = "אשר";
+locale.closeInventory = "סגור";
+locale.searchInventory = "חיפוש בתיק אישי";
