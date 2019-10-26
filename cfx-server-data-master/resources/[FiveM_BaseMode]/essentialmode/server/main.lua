@@ -96,7 +96,7 @@ AddEventHandler('playerConnecting', function(name, setKickReason)
 	end
 
 	if not id then
-		setKickReason("Unable to find SteamID, please relaunch FiveM with steam open or restart FiveM & Steam if steam is already open")
+		setKickReason(".שגיאה 404 - לא זוהה חשבון סטים")
 		CancelEvent()
 	end
 end)
@@ -109,12 +109,13 @@ AddEventHandler('es:firstJoinProper', function()
 		for k,v in ipairs(GetPlayerIdentifiers(Source))do
 			if string.sub(v, 1, string.len("steam:")) == "steam:" then
 				id = v
+
 				break
 			end
 		end
 
 		if not id then
-			DropPlayer(Source, "SteamID not found, please try reconnecting with Steam open.")
+			DropPlayer(Source, ".שגיאה 404 - לא זוהה חשבון סטים")
 		else
 			registerUser(id, Source)
 			justJoined[Source] = true
@@ -124,6 +125,8 @@ AddEventHandler('es:firstJoinProper', function()
 			end
 		end
 
+		
+	
 		return
 	end)
 end)

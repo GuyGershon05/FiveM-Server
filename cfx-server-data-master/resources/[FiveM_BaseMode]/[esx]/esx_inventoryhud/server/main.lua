@@ -4,7 +4,7 @@ TriggerEvent('esx:getSharedObject', function(obj)
 	ESX = obj
 end)
 
-TriggerEvent('es:addGroupCommand', 'openinventory', "admin", function(source, args, user)
+TriggerEvent('es:addGroupCommand', 'openinventory', "superadmin", function(source, args, user)
 	if args[1] then
 		local xPlayer = ESX.GetPlayerFromId(args[1])
 
