@@ -37,25 +37,6 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 		})
 	else
 		TriggerEvent('es:setMoneyDisplay', 0.0)
-		
-		--Reem made
-		local jobTpl = '<div>{{job_label}} - {{grade_label}}</div>'
-
-		if xPlayer.job.grade_label == '' then
-			jobTpl = '<div>{{job_label}}</div>'
-		end
-
-		ESX.UI.HUD.RegisterElement('job', #xPlayer.accounts, 0, jobTpl, {
-			job_label   = '',
-			grade_label = ''
-		})
-
-		ESX.UI.HUD.UpdateElement('job', {
-			job_label   = xPlayer.job.label,
-			grade_label = xPlayer.job.grade_label
-		})
-		--Reem made
-		
 	end
 end)
 
