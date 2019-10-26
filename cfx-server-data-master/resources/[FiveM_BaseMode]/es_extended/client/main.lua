@@ -18,7 +18,7 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 			ESX.UI.HUD.UpdateElement('account_' .. v.name, {
 				money = ESX.Math.GroupDigits(v.money)
 			})
-		end 
+		end --]]
 
 		local jobTpl = '<div>{{job_label}} - {{grade_label}}</div>'
 
@@ -34,7 +34,7 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 		ESX.UI.HUD.UpdateElement('job', {
 			job_label   = xPlayer.job.label,
 			grade_label = xPlayer.job.grade_label
-		})--]]
+		})
 	else
 		TriggerEvent('es:setMoneyDisplay', 0.0)
 		
